@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <h1>Mercado tecno</h1>
+    </div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#registro">Registro</a>
+    </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos</h2>
+            <p>Encuentra los mejores productos aqui</p>
+        </section>
+
+        <section id="productos">
+            <h2>Productos Destacados</h2>
+            <div class="contenedor-productos">
+                
+                <article class="tarjeta-producto">
+                    <img src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?q=80&w=813&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Audífonos Bluetooth">
+                    <h3>Audífonos Bluetooth</h3>
+                    <p>Cancelación de ruido activa.</p>
+                    <p class="precio">$29.990</p>
+                    <button type="button">Comprar</button>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Teclado Mecánico">
+                    <h3>Teclado Mecánico</h3>
+                    <p>Luces RGB y switches silenciosos.</p>
+                    <p class="precio">$39.990</p>
+                    <button type="button">Comprar</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="nosotros">
+            <h2>Conócenos</h2>
+            <p>Mira nuestro video de presentación:</p>
+            <div class="video-contenedor">
+                <iframe 
+                    width="320" 
+                    height="180" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="Video" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="registro">
+            <h2>Registro de Usuario</h2>
+            <form id="formularioRegistro" novalidate>
+                
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+                </div>
+
+                <div class="campo">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="campo">
+                    <label for="confirmPassword">Confirmar contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                </div>
+
+                <button type="submit" id="btnEnviar">Registrarse</button>
+                <p id="mensajeError" class="alerta error"></p>
+                <p id="mensajeExito" class="alerta exito"></p>
+
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Mercado tecno - Todos los derechos reservados.</p>
+            <p>Contacto: soporte@Mercadotecno.cl | Tel: +56 9 1234 5678</p>
+        </footer>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
